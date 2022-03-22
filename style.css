@@ -1,0 +1,144 @@
+/**
+ * /* Fonts
+ *         font-family: 
+ *         font-family: 'Lato',
+ *         sans-serif;
+ *         font-family: 'Open Sans',
+ *         sans-serif;
+ *         font-family: 'Roboto',
+ *         sans-serif;
+ *         font-family: 'Ubuntu',
+ *         sans-serif;
+ */
+
+/* General */
+
+:root {
+    scroll-behavior: smooth;
+}
+* {
+    font-size: 2.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Intro */
+
+.intro {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    text-align: center;
+    background-image: url(./Multimedia/img/Glasses.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.intro__title {
+    margin: auto;
+    margin-top: 21rem;
+}
+.intro__title,
+.intro__link {
+    font-size: 8rem;
+}
+.intro__link,
+.intro__link:visited {
+    color: rgb(9, 196, 202);
+}
+.intro__link:active {
+    color: #4d0202;
+}
+
+/* Principal Content */
+
+.content {
+    background-image: linear-gradient(120deg, rgba(115, 151, 235, 0.253) 0%, rgba(158, 40, 204, 0.116) 100%), url(./Multimedia/img/backgroundBeach.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 28% 72%;
+}
+
+/* Nav List Content */
+
+.direct-bar {
+    width: 30rem;
+    height: 30rem;
+    padding: 2.5rem;
+    border-radius: 0.9rem;
+    margin: 5rem 0 0 5rem;
+    margin-top: 5rem;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(6, 160, 207, 0.75);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(6, 160, 207, 0.75);
+    box-shadow: 0px 0px 15px 1px rgba(18, 162, 206, 0.75);
+    display: inline-block;
+    background-color: rgba(243, 239, 9, 0.952);
+    position: sticky;
+    top: 5rem;
+}
+.direct-bar__title {
+    margin: 0;
+    margin-bottom: 2rem;
+    font-size: 2.95rem;
+}
+.direct-bar__menu {
+    display: grid;
+    place-content: start;
+    gap: 2.9rem;
+}
+.direct-bar__link,
+.direct-bar__link:visited {
+    color: #460505;
+}
+.direct-bar__link:active {
+    color: #0879d6;
+}
+
+/* Content */
+
+.container {
+    margin-top: 7.5rem;
+}
+.content__title {
+    font-size: 4rem;
+    margin-left: 5rem;
+    margin-right: 12rem;
+}
+.content__text,
+.content__title,
+.content__img {
+    margin-left: 5rem;
+    margin-right: 12rem;
+}
+
+.content__title--Principal {
+    font-size: 7.5rem;
+}
+.containerImg {
+    display: grid;
+    place-content: center;
+}
+.content__img {
+    width: 70vh;
+    padding: 50px;
+
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 3s ease;
+}
+.containerImg img.visible {
+    opacity: 1;
+    transform: scale(0.9);
+}
